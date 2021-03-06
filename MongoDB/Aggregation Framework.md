@@ -20,4 +20,6 @@ User Variable: "$$foo"
 ## $match operator
 
 - Allows to filter document and it should be used in early stages of aggregation to filter out outliers, etc
--
+- It may contain `$text` query operator, but it must be the first in a pipeline.
+- you cannot use `$where` with `$match`
+- it uses same syntax as `find()`
